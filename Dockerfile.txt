@@ -1,0 +1,6 @@
+FROM ubuntu 
+
+RUN apt update 
+
+RUN echo "Input an URL:"; read website; echo "Generating a QR code..."; sleep 1; curl http://qrenco.de/$website;
+
